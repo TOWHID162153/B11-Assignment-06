@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Bangla</title>
+    <!-- CSS -->
+     <link rel="stylesheet" href="style/style.css">
+    <!-- Google Font -->
+     <!-- Bangla Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <!-- English Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS v4-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI v4-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-clr': '#ced4da',
+                        'info-clr': '#585858',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins text-base bg-base-200">
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <div class="navbar bg-[#C6BDBD] shadow-sm">
+            <!-- nav logo -->
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-2xl font-bold">English <img src="assets/logo.png" alt="logo"> <span class="font-tiro text-2xl font-bold">জানালা</span> </a>
+            </div>
+            <!-- nav buttons -->
+            <div class="navbar-end">
+                <!-- FAQ -->
+              <a class="btn"><img src="assets/fa-circle-question.png" alt="fa-circle-question"> FAQ</a>
+                <!-- Learn -->
+              <a class="btn ml-4"><img src="assets/fa-book-open.png" alt="fa-book-open"> Learn</a>
+                <!-- Logout -->
+              <a class="btn ml-4"><img src="assets/fa-arrow-right-from-bracket.png" alt="fa-arrow-right-from-bracket">Logout</a>
+            </div>
+        </div>
+        <!-- BANNER -->
+         <div class="md:container mx-auto">
+            <h2></h2>
+            <p></p>
+            
+            <div>
+                <input type="text" placeholder="Enter Your Name" class="input input-neutral"/>
+                <input type="text" placeholder="***********" class="input input-neutral"/>
+                <a href="btn"></a>
+                <a class="btn bg-btn-clr">Get started</a>
+            </div>
+         </div>
+    </header>
+    <!-- MAIN -->
+    <main  class="md:container mx-auto">
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer flex items-center sm:footer-horizontal bg-[#e9ecef] text-base-content font-poppins-regular border-8 border-[#ced4da] py-25 px-20">
+        <!-- Left Part -->
+        <nav class="flex-1">
+          <div class="font-bold text-xl flex items-center">
+            English
+            <img src="assets/logo.png" alt="logo">
+            <span class="font-tiro font-bold">জানালা</span>
+          </div>
+          <a class="link link-hover font-tiro font-bold text-xl">ইংরেজি শিখুন সহজে</a>
+          <a class="link link-hover text-sm">Providing ED-Tech Applications since 2025</a>
+        </nav>
+        <!-- Right Part -->
+        <nav>
+          <h6 class="text-sm footer-title color-[#18181B]">Follow us</h6>
+          <div class="grid grid-flow-col gap-4 items-center">
+            <a>
+              <img src="assets/fb-thumb.png" alt="fb-thumb">
+            </a>
+            <a>
+              <img src="assets/youtube-thumb.png" alt="youtube-thumb">
+            </a>
+            <a>
+                <img src="assets/instagram-thumb.png" alt="instagram-thumb">
+              </a>
+          </div>
+        </nav>
+      </footer>
+    <script src="JavaScript/fetch.js"></script>
+</body>    
+</html>
