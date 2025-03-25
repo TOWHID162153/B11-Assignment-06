@@ -1,106 +1,369 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Bangla</title>
-    <!-- CSS -->
-     <link rel="stylesheet" href="style/style.css">
+<html class="main-html" lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22 march 2025</title>
+    <!-- Manual CSS -->
+    <link rel="stylesheet" href="Styles/style.css" />
     <!-- Google Font -->
-     <!-- Bangla Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
-    <!-- English Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bangla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI v4-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS v4-->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- DaisyUI v4-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CSS Custom -->
+    <!-- Tailwind Custom -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-
-                    colors: {
-                        clifford: '#da373d',
-                        'btn-clr': '#ced4da',
-                        'info-clr': '#585858',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-clr": "#ced4da",
+              "info-clr": "#585858",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="font-poppins text-base bg-base-200">
+    <style>
+      .active{
+   background-color:#a9bcd0;
+   border: none;
+  }
+  .font-tiro {
+    font-family: "Tiro Bangla", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .font-hind {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    </style>
+  </head>
+
+  <body id="main-body" class="font-poppins text-base bg-base-200">
     <!-- HEADER -->
-    <header>
-        <!-- NAVBAR -->
-        <div class="navbar bg-[#C6BDBD] shadow-sm">
-            <!-- nav logo -->
-            <div class="navbar-start">
-              <a class="btn btn-ghost text-2xl font-bold">English <img src="assets/logo.png" alt="logo"> <span class="font-tiro text-2xl font-bold">জানালা</span> </a>
-            </div>
-            <!-- nav buttons -->
-            <div class="navbar-end">
-                <!-- FAQ -->
-              <a class="btn"><img src="assets/fa-circle-question.png" alt="fa-circle-question"> FAQ</a>
-                <!-- Learn -->
-              <a class="btn ml-4"><img src="assets/fa-book-open.png" alt="fa-book-open"> Learn</a>
-                <!-- Logout -->
-              <a class="btn ml-4"><img src="assets/fa-arrow-right-from-bracket.png" alt="fa-arrow-right-from-bracket">Logout</a>
-            </div>
+    <header id="header-section">
+      <!-- NAVBAR -->
+      <div
+        class="bg-[#a9bcd0] py-7 fixed top-0 w-full z-10 border-b-[2px] border-[#8d99ae]"
+      >
+        <div class="navbar md:container mx-auto">
+          <!-- Logo -->
+          <div class="navbar-start">
+            <a
+              class="btn btn-ghost text-2xl font-bold items-center"
+              href="#main-body"
+            >
+              English <img src="assets/logo.png" alt="logo" />
+              <span class="font-tiro text-2xl font-bold">জানালা</span>
+            </a>
+          </div>
+          <!-- Buttons -->
+          <div class="navbar-end">
+            <!-- FAQ -->
+            <a
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d]"
+              href="#faq-section"
+            >
+              <img
+                src="assets/fa-circle-question.png"
+                alt="fa-circle-question"
+              />
+              FAQ
+            </a>
+            <!-- Learn -->
+            <a
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
+              href="#learn-section"
+            >
+              <img src="assets/fa-book-open.png" alt="fa-book-open" /> Learn
+            </a>
+            <!-- Logout -->
+            <a
+              id="log-out"
+              class="btn bg-btn-clr drop-shadow-md border-4 border-[#3d2c8d] ml-4"
+            >
+              <img
+                src="assets/fa-arrow-right-from-bracket.png"
+                alt="fa-arrow-right-from-bracket"
+              />
+              Logout
+            </a>
+          </div>
         </div>
-        <!-- BANNER -->
-         <div class="md:container mx-auto">
-            <h2></h2>
-            <p></p>
-            
-            <div>
-                <input type="text" placeholder="Enter Your Name" class="input input-neutral"/>
-                <input type="text" placeholder="***********" class="input input-neutral"/>
-                <a href="btn"></a>
-                <a class="btn bg-btn-clr">Get started</a>
-            </div>
-         </div>
+      </div>
+      <!-- BANNER -->
+      <div
+        id="banner-section"
+        class="md:container mx-auto flex items-center pt-28"
+      >
+        <!-- Left Part -->
+        <div class="flex-1">
+          <h2 class="font-bold text-4xl drop-shadow-sm mb-5">
+            <span class="text-[#00BCFF]">English</span> is Easy!!
+          </h2>
+          <p class="font-hind font-tiro text-base drop-shadow-sm mb-5">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+            অন্য একটি Level এ
+          </p>
+          <fieldset class="fieldset">
+            <input
+              id="email"
+              type="email"
+              class="input w-2/5 mb-5"
+              placeholder="Email"
+            />
+            <br />
+            <input
+              id="password"
+              type="password"
+              class="input w-2/5 mb-5"
+              placeholder="Password"
+            />
+          </fieldset>
+          <a
+            id="get-started"
+            class="btn bg-btn-clr drop-shadow-md border-4 border-[#8d99ae]"
+            >Get started</a
+          >
+        </div>
+        <!-- Right Part -->
+        <div class="w-5/12">
+          <img src="assets/hero-student.png" alt="hero-student" />
+        </div>
+      </div>
     </header>
     <!-- MAIN -->
-    <main  class="md:container mx-auto">
+    <main id="main-section" class="md:container mx-auto hidden">
+
+
+      <!-- LEARN SECTION -->
+      <section
+        id="learn-section"
+        class="text-center pt-[200px] rounded-2xl drop-shadow-md"
+      >
+        <!-- Title & Buttons -->
+        <div id="buttons-container" class="mb-10">
+          <h2 class="font-bold text-4xl drop-shadow-sm mb-10">
+            <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+          </h2>
+          <div id="buttonsInner-container"></div>
+          <!-- 7 Button Location -->
+        </div>
+        
+        
+      </section>
+
+
+      <!-- layout 01 -->
+      <section>
+        <div id="startup-layout" class="text-center">
+          <div
+            class="bg-[#e9ecef] rounded-b-2xl border-[2px] border-[#8d99ae] py-16"
+          >
+            <p class="font-hind font-tiro text-base drop-shadow-sm mb-3">
+              আপনি এখনো কোন Lesson Select করেননি
+            </p>
+            <h2 class="font-hind text-medium text-4xl drop-shadow-sm">
+              একটি Lesson Select করুন।
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- layout 02 -->
+      <section class="error">
+        <div id="error-layout" class="text-center">
+          
+        </div>
+      </section>
+<!-- Cards Container -->
+      <section>
+      <div id="cards-container" class="">
+        <div id="cardsInner-container" class="grid grid-cols-3 rounded-2xl drop-shadow-2xl gap-4 p-4">
+
+
+
+        </div>
+      </div>
+    </section>
+
+      <!-- FAQ SECTION -->
+      <section id="faq-section" class="pt-[200px]">
+        <h2 class="font-bold text-4xl drop-shadow-sm text-center pt-6 pb-20">
+          <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+        </h2>
+        <!-- The Qustion Part -->
+        <div>
+          <!-- QUS No 01 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              the difference between var, let, and const
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+          <!-- QUS No 02 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              the difference between map(), forEach(), and filter()
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+          <!-- QUS No 03 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              explain arrow functions and how they are different from regular
+              functions
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+          <!-- QUS No 04 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              how JavaScript Promises work
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+          <!-- QUS No 05 -->
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow bg-[#dee2e6] drop-shadow-md mb-5"
+          >
+            <div class="collapse-title font-semibold">
+              how closures work in JavaScript
+            </div>
+            <div class="collapse-content text-sm text-info-clr">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.😊
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Modal -->
+      <section id="modal-section">
+          <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="allVocabulary.showModal()">open modal</button> -->
+        <dialog id="word_details" class="modal">
+          <div class="modal-box">
+            <!-- Word Section -->
+            <div id="word-section">
+                
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog> 
+      </section>
 
 
     </main>
     <!-- FOOTER -->
-    <footer class="footer flex items-center sm:footer-horizontal bg-[#e9ecef] text-base-content font-poppins-regular border-8 border-[#ced4da] py-25 px-20">
-        <!-- Left Part -->
-        <nav class="flex-1">
-          <div class="font-bold text-xl flex items-center">
-            English
-            <img src="assets/logo.png" alt="logo">
-            <span class="font-tiro font-bold">জানালা</span>
-          </div>
-          <a class="link link-hover font-tiro font-bold text-xl">ইংরেজি শিখুন সহজে</a>
-          <a class="link link-hover text-sm">Providing ED-Tech Applications since 2025</a>
-        </nav>
-        <!-- Right Part -->
-        <nav>
-          <h6 class="text-sm footer-title color-[#18181B]">Follow us</h6>
-          <div class="grid grid-flow-col gap-4 items-center">
-            <a>
-              <img src="assets/fb-thumb.png" alt="fb-thumb">
-            </a>
-            <a>
-              <img src="assets/youtube-thumb.png" alt="youtube-thumb">
-            </a>
-            <a>
-                <img src="assets/instagram-thumb.png" alt="instagram-thumb">
-              </a>
-          </div>
-        </nav>
-      </footer>
-    <script src="JavaScript/fetch.js"></script>
-</body>    
+    <footer
+      class="footer flex items-center sm:footer-horizontal bg-[#e9ecef] text-base-content font-poppins-regular border-[2px] border-[#8d99ae] mt-[200px] py-25 px-20"
+    >
+      <!-- Left Part -->
+      <nav class="flex-1">
+        <div class="font-bold text-xl flex items-center">
+          English
+          <img src="assets/logo.png" alt="logo" />
+          <span class="font-tiro font-bold">জানালা</span>
+        </div>
+        <a class="link link-hover font-hind font-bold text-xl"
+          >ইংরেজি শিখুন সহজে</a
+        >
+        <a class="link link-hover text-sm"
+          >Providing ED-Tech Applications since 2025</a
+        >
+      </nav>
+      <!-- Right Part -->
+      <nav>
+        <h6 class="text-sm footer-title color-[#18181B]">Follow us</h6>
+        <div class="grid grid-flow-col gap-4 items-center">
+          <!-- fb -->
+          <a>
+            <img src="assets/fb-thumb.png" alt="fb-thumb" />
+          </a>
+          <!-- YT -->
+          <a>
+            <img src="assets/youtube-thumb.png" alt="youtube-thumb" />
+          </a>
+          <!-- Ins -->
+          <a>
+            <img src="assets/instagram-thumb.png" alt="instagram-thumb" />
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script src="JavaScript/login.js"></script>
+    <script src="JavaScript/javaScript.js"></script>
+  </body>
 </html>
